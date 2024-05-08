@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100%;
+    background: #262626;
+    color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+nav {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px #e2e2e2 solid;
+}
+
+nav > p {
+    font-size: 25px;
+}
+
+.body_div {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_div > p {
+    margin-bottom: 4px;
+}
+
+.body_div > p::before {
+    content: "- ";
+}
+
+.div_fotos {
+    width: 100%;
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div_fotos > p {
+    align-self: center;
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.img-hover {
+    min-width: 300px;
+    height: 400px;
+    background-image: url('../img/gatitoNormal.jpg');
+    transition: all 1s;
+    object-fit: cover;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+}
+
+.img-hover:hover {
+    background-image: url('../img/gatitoNoTanGato.jpg');
+}
+
+.img-normal {
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;	
+    object-fit: cover;
+    min-width: 300px;
+    height: 400px;
+    background-image: url('../img/gatitoNormal2.jpg');
+    transition: all 1s;
+}
